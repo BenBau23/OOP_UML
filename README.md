@@ -1,2 +1,2 @@
 # OOP_UML
-Only for me and Janet!
+This is a school project from BenBau23 and Janetoilet
