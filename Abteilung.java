@@ -7,7 +7,6 @@ public class Abteilung {
 
     public String getKuerzel() {
         return Kuerzel;
-        //test
     }
 
     public String getName() {
