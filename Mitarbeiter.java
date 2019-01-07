@@ -1,2 +1,2 @@
-public class Mitarbeiter {
+public class Mitarbeiter extends Person{
 }

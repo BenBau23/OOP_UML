@@ -1,2 +1,3 @@
-public class Schueler {
+public class Schueler extends Person{
+    
 }
