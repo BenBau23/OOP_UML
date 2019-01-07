@@ -1,7 +1,9 @@
 public class Lehrer {
     private String kuerzel;
 
-    public String getKuerzel()
+    public String getKuerzel() {
+        return kuerzel;
+    }
 
-    public void exportStundenplan()
+    //public void exportStundenplan()  not working
 }

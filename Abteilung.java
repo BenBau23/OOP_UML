@@ -13,4 +13,7 @@ public class Abteilung {
         return Name;
     }
 
+    public ArrayList getSchueler() {
+        return Schueler;
+    }
 }
