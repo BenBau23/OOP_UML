@@ -1,3 +1,7 @@
-public class Schueler extends Person{
-    
+import java.util.Date;
+
+public class Schueler {
+    private int katalognummer;
+    private boolean eigenberechtigt;
+    private Date eintrittsdatum;
 }

@@ -8,17 +8,34 @@ public class Adresse {
         return hausnummer;
     }
 
+    public void setHausnummer(int h) {
+        hausnummer = h;
+    }
+
     public int getPlz() {
         return plz;
+    }
+
+    public void setPlz(int p) {
+        plz = p;
     }
 
     public String getOrt() {
         return ort;
     }
 
+    public void setOrt(String o) {
+        ort = o;
+}
+
     public String getStrasse() {
         return strasse;
     }
+
+    public void setStrasse(String s) {
+        strasse = s;
+    }
+
     public void printAdresse(){
     System.out.println("Ort: "+ort);
     System.out.println("Strasse: "+strasse);
