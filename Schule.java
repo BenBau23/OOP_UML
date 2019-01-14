@@ -1,17 +1,18 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Schule {
     private String Name;
     private long Schulkennzahl;
     private String Schultyp;
     private Adresse Standort;
     private Schueler Schulsprecher;
-    private Abteilung Abteilungen[20];
+    private List Abteilungen = new ArrayList();
 
 
 
     public Abteilung addAbteilung(String n, String kuerzel) {
-        Abteilung abt;
-        abt.setName(n);
-        abt.setKuerzel(kuerzel);
-        return abt;
+        Abteilung abteilung = new Abteilung(n,kuerzel);
+        return abteilung;
     }
 }
