@@ -5,7 +5,7 @@ public class Lehrer extends Person{
         return kuerzel;
     }
 
-    public String setKuerzel(String k) {
+    public void setKuerzel(String k) {
         kuerzel = k;
     }
 
