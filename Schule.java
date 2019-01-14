@@ -7,7 +7,8 @@ public class Schule {
     private String Schultyp;
     private Adresse Standort;
     private Schueler Schulsprecher;
-    private List Abteilungen = new ArrayList();
+    private List<Abteilung> Abteilungen = new ArrayList();
+    private List<NichtLehrpersonal> Personal = new ArrayList();
 
 
 
