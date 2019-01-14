@@ -5,5 +5,9 @@ public class Lehrer extends Person{
         return kuerzel;
     }
 
+    public String setKuerzel(String k) {
+        kuerzel = k;
+    }
+
     //public void exportStundenplan()  not working
 }

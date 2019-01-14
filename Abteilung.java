@@ -9,11 +9,23 @@ public class Abteilung {
         return Kuerzel;
     }
 
+    public void setKuerzel(String k) {
+        Kuerzel = k;
+    }
+
     public String getName() {
         return Name;
     }
 
+    public void setName(String n) {
+        Name = n;
+    }
+
     public ArrayList getSchueler() {
         return Schueler;
+    }
+
+    public void setSchueler(ArrayList s) {
+        Schueler = s;
     }
 }
