@@ -1,9 +1,10 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Abteilung {
     private String Kuerzel;
     private String Name;
-    private ArrayList Schueler;
+    private List<Schueler> Schueler = new ArrayList();
 
     public String getKuerzel() {
         return Kuerzel;
@@ -21,11 +22,16 @@ public class Abteilung {
         Name = n;
     }
 
-    public ArrayList getSchueler() {
+    public List<Schueler> getSchueler() {
         return Schueler;
     }
 
     public void setSchueler(ArrayList s) {
         Schueler = s;
+    }
+
+    public Abteilung (String Name, String Kuerzel){
+        this.Name=Name;
+        this.Kuerzel=Kuerzel;
     }
 }
