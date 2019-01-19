@@ -1,6 +1,8 @@
 public class Belegung {
     private int unterrichtsEinheit;
     private Unterrichtstag unterrichtstag;
+    private Klasse klasse;
+    private Lehrer lehrer;
 
     public Unterrichtstag getWochentag () {
         return unterrichtstag;
@@ -19,10 +21,10 @@ public class Belegung {
     }
 
     public Klasse getKlasse () {
-
+        return klasse;
     }
 
     public Lehrer getLehrer () {
-
+        return lehrer;
     }
 }

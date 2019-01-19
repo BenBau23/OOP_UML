@@ -1,3 +1,3 @@
 public enum Raumtyp {
-    KLASSENZIMMER, LABORRAUM
+    KLASSENZIMMER, LABORRAUM;
 }

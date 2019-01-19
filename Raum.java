@@ -20,11 +20,11 @@ public class Raum {
         maxSitzplaetze = m;
     }
 
-    public raumtyp getRaumtyp() {
+    public Raumtyp getRaumtyp() {
         return raumtyp;
     }
 
-    public void setRaumtyp(raumtyp r) {
+    public void setRaumtyp(Raumtyp r) {
         raumtyp = r;
     }
 }

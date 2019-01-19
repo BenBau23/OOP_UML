@@ -29,7 +29,7 @@ public class Klasse {
     }
 
     public boolean setKlassensprecher(Schueler schueler) {
-
+        klassensprecher = schueler;
     }
 
     public void addSchueler(long szvnr, String Vorname, String Nachname, Date Geburtsdatum, String email, String ort, String strasse, int hnr, int plz, boolean eigenberechtigt, int katalognummer, Date eintrittsdatum){
