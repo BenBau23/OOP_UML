@@ -18,8 +18,8 @@ public class Schule {
         this.Abteilungen.add(new Abteilung(n,kuerzel));
     }
 
-    public void addPersonal(long szvnr, String vn, String nn, Date geb, String email){
-        this.Personal.add(new NichtLehrpersonal(szvnr,vn,nn,geb,email));
+    public void addPersonal(long szvnr, String vn, String nn, Date geb, String email, String ort, String strasse, int hnr, int plz){
+        this.Personal.add(new NichtLehrpersonal(szvnr,vn,nn,geb,email,ort,strasse,hnr,plz));
     }
 
     public void setDirektor(Lehrer direktor) {
