@@ -1,7 +1,7 @@
 public class Fach {
     private String name;
     private int wochenstunden;
-    // private Raumtyp raumanforderungen;
+    private Raumtyp raumanforderungen;
 
     public String getName() {
         return name;
@@ -19,12 +19,12 @@ public class Fach {
         wochenstunden = w;
     }
 
-    /*public Raumtyp getRaumanforderung() {
+    public Raumtyp getRaumanforderung() {
         return raumanforderungen;
-    }*/
+    }
 
-    /*public void setRaumanforderung(Raumtyp r) {
+    public void setRaumanforderung(Raumtyp r) {
         raumanforderungen = r;
-    }*/
+    }
 }
 
