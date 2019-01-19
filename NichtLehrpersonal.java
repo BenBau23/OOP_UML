@@ -1,3 +1,8 @@
+import java.util.Date;
+
 public class NichtLehrpersonal extends Mitarbeiter {
-    private Schule angestellt_bei;
+    public NichtLehrpersonal(long szvnr,String Vorname,String Nachname,Date Geburtsdatum,String email){
+        new Mitarbeiter(szvnr, Vorname, Nachname, Geburtsdatum, email);
+
+    }
 }

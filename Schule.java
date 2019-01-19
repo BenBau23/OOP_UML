@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Date;
 
 public class Schule {
     private String Name;
@@ -12,8 +13,11 @@ public class Schule {
 
 
 
-    public Abteilung addAbteilung(String n, String kuerzel) {
-        Abteilung abteilung = new Abteilung(n,kuerzel);
-        return abteilung;
+    public void addAbteilung(String n, String kuerzel) {
+        this.Abteilungen.add(new Abteilung(n,kuerzel));
+    }
+
+    public void addPersonal(long szvnr, String vn, String nn, Date geb, String email){
+        this.Personal.add(new NichtLehrpersonal(szvnr,vn,nn,geb,email));
     }
 }
