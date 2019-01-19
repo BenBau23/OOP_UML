@@ -37,9 +37,16 @@ public class Adresse {
     }
 
     public void printAdresse(){
-    System.out.println("Ort: "+ort);
-    System.out.println("Strasse: "+strasse);
-    System.out.println("Hausnummer: "+hausnummer);
-    System.out.println("PLZ: "+plz);
+        System.out.println("Ort: "+ort);
+        System.out.println("Strasse: "+strasse);
+        System.out.println("Hausnummer: "+hausnummer);
+        System.out.println("PLZ: "+plz);
+    }
+
+    public Adresse(String Ort, String Strasse, int hnr, int plz){
+        this.hausnummer=hnr;
+        this.ort=Ort;
+        this.plz=plz;
+        this.strasse=Strasse;
     }
 }

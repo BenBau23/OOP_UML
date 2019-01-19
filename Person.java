@@ -1,11 +1,12 @@
 import java.util.Date;
 
 public class Person {
-    protected long szvnr;
-    protected String Vorname;
-    protected String Nachname;
-    protected Date Geburtsdatum;
-    protected String email;
+    private long szvnr;
+    private String Vorname;
+    private String Nachname;
+    private Date Geburtsdatum;
+    private String email;
+    private Adresse Wohnort;
 
     public Date getGeburtsdatum() {
         return Geburtsdatum;
@@ -45,6 +46,10 @@ public class Person {
 
     public void setVorname(String v) {
         Vorname = v;
+    }
+
+    public void setWohnort(Adresse wohnort) {
+        Wohnort = wohnort;
     }
 
     public void Person(long szvnr, String Vorname, String Nachname, Date Geburtsdatum, String email){

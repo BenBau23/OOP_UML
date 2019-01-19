@@ -10,6 +10,7 @@ public class Schule {
     private Schueler Schulsprecher;
     private List<Abteilung> Abteilungen = new ArrayList();
     private List<NichtLehrpersonal> Personal = new ArrayList();
+    private Lehrer direktor;
 
 
 
@@ -19,5 +20,9 @@ public class Schule {
 
     public void addPersonal(long szvnr, String vn, String nn, Date geb, String email){
         this.Personal.add(new NichtLehrpersonal(szvnr,vn,nn,geb,email));
+    }
+
+    public void setDirektor(Lehrer direktor) {
+        this.direktor = direktor;
     }
 }

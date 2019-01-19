@@ -5,6 +5,7 @@ public class Abteilung {
     private String Kuerzel;
     private String Name;
     private List<Schueler> Schueler = new ArrayList();
+    private Lehrer Abteilungsvorstand;
 
     public String getKuerzel() {
         return Kuerzel;
@@ -33,5 +34,9 @@ public class Abteilung {
     public Abteilung (String Name, String Kuerzel){
         this.Name=Name;
         this.Kuerzel=Kuerzel;
+    }
+
+    public void setAbteilungsvorstand(Lehrer abteilungsvorstand) {
+        Abteilungsvorstand = abteilungsvorstand;
     }
 }
