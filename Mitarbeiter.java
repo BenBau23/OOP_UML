@@ -1,7 +1,7 @@
 import java.util.Date;
 
 public class Mitarbeiter extends Person{
-    private int anzahl;
+    private static int anzahl;
 
     public int getAnzahl() {
         return anzahl;
