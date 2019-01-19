@@ -30,7 +30,7 @@ public class Klasse {
             int y;
             Date d;
             d = k.getGeburtsdatum();
-            y = d.getYear() + 1900;
+            y = d.getYear() + 1900; // HIIIII
         }
 
     }
