@@ -1,7 +1,7 @@
 public class Raum {
     private String raumNummer;
     private int maxSitzplaetze;
-    //private raumtyp Raumtyp;
+    private Raumtyp raumtyp;
 
 
     public String getRaumNummer() {
@@ -20,11 +20,11 @@ public class Raum {
         maxSitzplaetze = m;
     }
 
-    /*public raumtyp getRaumtyp() {
-        return Raumtyp;
-    }*/
+    public raumtyp getRaumtyp() {
+        return raumtyp;
+    }
 
-    /*public void setRaumtyp(raumtyp r) {
-        Raumtyp = r;
-    }*/
+    public void setRaumtyp(raumtyp r) {
+        raumtyp = r;
+    }
 }

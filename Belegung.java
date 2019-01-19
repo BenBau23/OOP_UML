@@ -11,11 +11,11 @@ public class Belegung {
     }
 
     public static void main (String[] args) {
-        Unterrichtstag montag = new Unterrichtstag(Unterrichtstag.MONTAG);
-        Unterrichtstag dienstag = new Unterrichtstag(Unterrichtstag.DIENSTAG);
-        Unterrichtstag mittwoch = new Unterrichtstag(Unterrichtstag.MITTWOCH);
-        Unterrichtstag donnerstag = new Unterrichtstag(Unterrichtstag.DONNERSTAG);
-        Unterrichtstag freitag = new Unterrichtstag(Unterrichtstag.FREITAG);
+        Belegung montag = new Belegung(Unterrichtstag.MONTAG);
+        Belegung dienstag = new Belegung(Unterrichtstag.DIENSTAG);
+        Belegung mittwoch = new Belegung(Unterrichtstag.MITTWOCH);
+        Belegung donnerstag = new Belegung(Unterrichtstag.DONNERSTAG);
+        Belegung freitag = new Belegung(Unterrichtstag.FREITAG);
     }
 
     public Klasse getKlasse () {
