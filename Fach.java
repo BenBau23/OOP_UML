@@ -24,7 +24,7 @@ public class Fach {
     }*/
 
     /*public void setRaumanforderung(Raumtyp r) {
-        raumafnorderungen = r;
+        raumanforderungen = r;
     }*/
 }
 
