@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Abteilung {
@@ -37,6 +38,10 @@ public class Abteilung {
     }
 
     public void setAbteilungsvorstand(Lehrer abteilungsvorstand) {
-        Abteilungsvorstand = abteilungsvorstand;
+        this.Abteilungsvorstand = abteilungsvorstand;
+    }
+
+    public void addSchueler(long szvnr, String Vorname, String Nachname, Date Geburtsdatum, String email, String ort, String strasse, int hnr, int plz, boolean eigenberechtigt, int katalognummer, Date eintrittsdatum){
+        this.Schueler.add(new Schueler(szvnr,Vorname,Nachname,Geburtsdatum,email,ort,strasse,hnr,plz,eigenberechtigt,katalognummer,eintrittsdatum));
     }
 }
