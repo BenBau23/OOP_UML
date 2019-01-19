@@ -25,4 +25,12 @@ public class Schule {
     public void setDirektor(Lehrer direktor) {
         this.direktor = direktor;
     }
+
+    public List<Schueler> getSchueler(){
+        List<Schueler> s = new ArrayList();
+        for(Abteilung k:Abteilungen){
+            //s.add(k.getSchueler());
+        }
+        return s;
+    }
 }
