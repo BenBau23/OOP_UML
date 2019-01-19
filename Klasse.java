@@ -25,6 +25,13 @@ public class Klasse {
     }
 
     public float getDurchschnittsalter(){
+        for(Schueler k: Schueler)
+        {
+            int y;
+            Date d;
+            d = k.getGeburtsdatum();
+            y = d.getYear() + 1900;
+        }
 
     }
 
