@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -7,6 +8,8 @@ public class Klasse {
     private int schulstufe;
     private Schueler klassensprecher;
     private List<Schueler> Schueler = new ArrayList();
+    private int alter;
+    private int anzahl;
 
     public String getBezeichnung() {
         return bezeichnung;
@@ -27,10 +30,9 @@ public class Klasse {
     public float getDurchschnittsalter(){
         for(Schueler k: Schueler)
         {
-            int y;
-            Date d;
-            d = k.getGeburtsdatum();
-            y = d.getYear() + 1900; // HIIII
+            Calendar calendar = Calendar.getInstance();
+            alter = calendar.get(Calendar.YEAR) - 2019;
+            anzahl = alter / Schueler.size();
         }
 
     }
@@ -39,7 +41,7 @@ public class Klasse {
         klassensprecher = schueler;
     }
 
-    public void addSchueler(long szvnr, String Vorname, String Nachname, Date Geburtsdatum, String email, String ort, String strasse, int hnr, int plz, boolean eigenberechtigt, int katalognummer, Date eintrittsdatum){
+    public void addSchueler(long szvnr, String Vorname, String Nachname, Calendar Geburtsdatum, String email, String ort, String strasse, int hnr, int plz, boolean eigenberechtigt, int katalognummer, Date eintrittsdatum){
         this.Schueler.add(new Schueler(szvnr,Vorname,Nachname,Geburtsdatum,email,ort,strasse,hnr,plz,eigenberechtigt,katalognummer,eintrittsdatum));
     }
 

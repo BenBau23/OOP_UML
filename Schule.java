@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Date;
+import java.util.Calendar;
 
 public class Schule {
     private String Name;
@@ -18,7 +18,7 @@ public class Schule {
         this.Abteilungen.add(new Abteilung(n,kuerzel));
     }
 
-    public void addPersonal(long szvnr, String vn, String nn, Date geb, String email, String ort, String strasse, int hnr, int plz){
+    public void addPersonal(long szvnr, String vn, String nn, Calendar geb, String email, String ort, String strasse, int hnr, int plz){
         this.Personal.add(new NichtLehrpersonal(szvnr,vn,nn,geb,email,ort,strasse,hnr,plz));
     }
 
