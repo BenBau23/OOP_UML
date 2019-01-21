@@ -13,11 +13,11 @@ public class Belegung {
     }
 
     public static void Belegung (String[] args) {
-        Belegung montag = new Belegung(Unterrichtstag.MONTAG);
+        /*Belegung montag = new Belegung(Unterrichtstag.MONTAG);
         Belegung dienstag = new Belegung(Unterrichtstag.DIENSTAG);
         Belegung mittwoch = new Belegung(Unterrichtstag.MITTWOCH);
         Belegung donnerstag = new Belegung(Unterrichtstag.DONNERSTAG);
-        Belegung freitag = new Belegung(Unterrichtstag.FREITAG);
+        Belegung freitag = new Belegung(Unterrichtstag.FREITAG);*/
     }
 
     public Klasse getKlasse () {

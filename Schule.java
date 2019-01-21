@@ -19,7 +19,7 @@ public class Schule {
     }
 
     public void addPersonal(long szvnr, String vn, String nn, Calendar geb, String email, String ort, String strasse, int hnr, int plz){
-        this.Personal.add(new NichtLehrpersonal(szvnr,vn,nn,geb,email,ort,strasse,hnr,plz));
+        //this.Personal.add(new NichtLehrpersonal(szvnr,vn,nn,geb,email,ort,strasse,hnr,plz));
     }
 
     public void setDirektor(Lehrer direktor) {

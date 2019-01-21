@@ -8,7 +8,6 @@ public class Klasse {
     private int schulstufe;
     private Schueler klassensprecher;
     private List<Schueler> Schueler = new ArrayList();
-    private int alter;
     private int anzahl;
 
     public String getBezeichnung() {
@@ -28,20 +27,21 @@ public class Klasse {
     }
 
     public float getDurchschnittsalter(){
+        int alter=0;
         for(Schueler k: Schueler)
         {
             Calendar calendar = Calendar.getInstance();
-            alter = 2019 - calendar.get(Calendar.YEAR);
-            anzahl = alter / Schueler.size();
+            alter += 2019 - calendar.get(Calendar.YEAR);
         }
-
+        return (float)alter/this.Schueler.size();
     }
 
     public boolean setKlassensprecher(Schueler schueler) {
         klassensprecher = schueler;
+        return true;
     }
 
     public void addSchueler(long szvnr, String Vorname, String Nachname, Calendar Geburtsdatum, String email, String ort, String strasse, int hnr, int plz, boolean eigenberechtigt, int katalognummer, Date eintrittsdatum){
-        this.Schueler.add(new Schueler(szvnr,Vorname,Nachname,Geburtsdatum,email,ort,strasse,hnr,plz,eigenberechtigt,katalognummer,eintrittsdatum));
+        //this.Schueler.add(new Schueler(szvnr,Vorname,Nachname,Geburtsdatum,email,ort,strasse,hnr,plz,eigenberechtigt,katalognummer,eintrittsdatum));
     }
 }
