@@ -44,8 +44,4 @@ public class Klasse {
     public void addSchueler(long szvnr, String Vorname, String Nachname, Calendar Geburtsdatum, String email, String ort, String strasse, int hnr, int plz, boolean eigenberechtigt, int katalognummer, Date eintrittsdatum){
         this.Schueler.add(new Schueler(szvnr,Vorname,Nachname,Geburtsdatum,email,ort,strasse,hnr,plz,eigenberechtigt,katalognummer,eintrittsdatum));
     }
-
-    /*public void exportStundenplan(){
-
-    }*/
 }
