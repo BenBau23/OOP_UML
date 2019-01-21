@@ -31,7 +31,7 @@ public class Klasse {
         for(Schueler k: Schueler)
         {
             Calendar calendar = Calendar.getInstance();
-            alter = calendar.get(Calendar.YEAR) - 2019;
+            alter = 2019 - calendar.get(Calendar.YEAR);
             anzahl = alter / Schueler.size();
         }
 

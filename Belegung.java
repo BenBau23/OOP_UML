@@ -12,7 +12,7 @@ public class Belegung {
         this.unterrichtstag = unterrichtstag;
     }
 
-    public static void main (String[] args) {
+    public static void Belegung (String[] args) {
         Belegung montag = new Belegung(Unterrichtstag.MONTAG);
         Belegung dienstag = new Belegung(Unterrichtstag.DIENSTAG);
         Belegung mittwoch = new Belegung(Unterrichtstag.MITTWOCH);
